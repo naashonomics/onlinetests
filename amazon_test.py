@@ -8,7 +8,6 @@ from selenium.common.exceptions import TimeoutException
 import re
 import time
 
-driver=webdriver.Chrome(executable_path='C:/Users/avin/Downloads/chrome/chromedriver.exe')
 
 class Amazon(object):
 	def __init__(self,item_list):
