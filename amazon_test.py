@@ -30,7 +30,7 @@ class Amazon(object):
 	
 	def add_to_cart(self):
 		time.sleep(2)
-		my_list=self.driver.find_elements_by_xpath("(//div[@class='sg-col-inner']//img[contains(@data-image-latency,'s-product-image')])[2]").click()
+		self.driver.find_element_by_xpath("(//div[@class='sg-col-inner']//img[contains(@data-image-latency,'s-product-image')])[2]").click()
 		self.driver.find_element_by_id("add-to-cart-button").click()
 		time.sleep(2)
 
